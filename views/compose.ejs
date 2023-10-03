@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+<h1>Compose</h1>
+<form action="/" method="post">
+  <!-- <input type="text" name="composeText" placeholder="Enter text ..." /> -->
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      name="postTitle"
+      aria-describedby="emailHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Post</label>
+    <textarea
+      rows="5"
+      cols="30"
+      type="textarea"
+      name="postBody"
+      class="form-control"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" style="margin-top: 10px;">Publish</button>
+</form>
+<%- include("partials/footer") %>
