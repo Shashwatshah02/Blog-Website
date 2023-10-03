@@ -58,6 +58,7 @@ app.post("/", (req, res) => {
   });
   // posts.push(post);
   post.save();
+  res.redirect("/");
 });
 
 app.listen(3000, () => {
